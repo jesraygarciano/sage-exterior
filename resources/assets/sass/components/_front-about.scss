@@ -1,0 +1,91 @@
+.f-container{
+    position: relative;
+    padding: 3rem;
+    // overflow: hidden;
+        img{
+        width: 100%;
+        height: auto;
+    }
+    .bg-image{
+        // height: 42rem;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: #777;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    .overlay{
+        height: 100%;
+        width: 100%;
+        // background-image: linear-gradient(to right, #3c4fb9, #48aa48);
+        background: #242a55;
+        position: absolute;
+        top: 0px;
+        opacity: .25;
+    }
+    .content{
+        // position: absolute;
+        // top: 100px;
+        // left:100px;
+        text-align: left;
+        p, h4{
+            color: #ffffff;
+        }
+        h4{
+            margin-bottom: 3.5rem;
+        }
+        h6{
+            color: #48aa48;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 3.5rem;
+        }
+        .w-line{
+            height: 2px;
+            width: 3rem;
+            background: #ffffff;
+            display: inline-block;
+            transform: rotate(-90deg);
+            position: absolute;
+            top:25px;
+            left:-20px;
+            
+        }
+        .btn{
+            margin-top:1rem;
+        }
+        img{
+            -webkit-box-shadow: 14px 16px 0px -1px rgba(72,170,72,1);
+            -moz-box-shadow: 14px 16px 0px -1px rgba(72,170,72,1);
+            box-shadow: 14px 16px 0px -1px rgba(72,170,72,1);
+        }
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+#about-grn-btn4{
+    background: transparent;
+    border: 1.5px solid #48AA48;
+    border-radius: 2rem;
+    color: #48AA48;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    &:hover{
+        color: #ffffff;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    
+    .content{
+        top: 20px !important;
+        left:20px !important;
+    }
+}

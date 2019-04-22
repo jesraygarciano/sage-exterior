@@ -1,0 +1,8 @@
+.custom-radio{
+    color: #88969f;
+    & input:checked{
+        & ~ *{
+            color: #343a40;
+        }
+    }
+}

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Do not edit anything in this file unless you know what you're doing
  */
@@ -13,6 +12,7 @@ use Roots\Sage\Container;
  * @param string $subtitle
  * @param string $title
  */
+
 $sage_error = function ($message, $subtitle = '', $title = '') {
     $title = $title ?: __('Sage &rsaquo; Error', 'sage');
     $footer = '<a href="https://roots.io/sage/docs/">roots.io/sage/docs/</a>';
@@ -58,7 +58,8 @@ array_map(function ($file) use ($sage_error) {
     if (!locate_template($file, true, true)) {
         $sage_error(sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file), 'File not found');
     }
-}, ['helpers', 'setup', 'filters', 'admin']);
+// }, ['helpers', 'setup', 'filters', 'admin']);
+}, ['helpers', 'setup', 'filters', 'admin', 'custom-post-type']);
 
 /**
  * Here's what's happening with these hooks:
@@ -90,3 +91,82 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+/* Adding custom menu for wordpress*/
+
+// function kinki_reg_menu(){
+//     register_nav_menu('primary', 'The primary eu on the top bar');
+//     register_nav_menu('overlap', 'The popup overlap menu');    
+// }
+
+// add_action('init', 'kinki_reg_menu');
+
+// function kinki_reg_menus(){
+//     register_nav_menus(
+//         array(
+//             'primary' => 'The primary menu on the TOP BAR NGGA',
+//             'overlap' => 'The popup overlap menu',
+//             'footer_menu' => 'The menu below the footer'
+//         )
+//     );
+// }
+// add_action('init', 'kinki_reg_menus');
+
+// Register nav walker class_alias
+
+require_once('bs4navwalker.php');
+
+register_nav_menu('top', 'Top menu');
+
+// Theme support
+
+// function wpk_theme_setup(){
+//     // Nav Menus
+//         register_nav_menus(
+//         array(
+//             'primary' => __('Primary Menu')
+//         )
+//     );
+// }
+
+// add_action('after_setup_theme', 'wpk_theme_setup');
+
+
+function get_init(){
+    add_theme_support('post-thumbnails');
+    add_theme_support('title-tag');
+    add_theme_support('html5',
+    array('comment-list', 'comment-form', 'search-form')
+    );
+}
+
+// add_action('after_setup_theme', 'gt_init');
+add_action( 'after_setup_theme', 'get_init' );
+// Projects post type
+
+function gt_custom_post_type(){
+    register_post_type('product',
+        array(
+            'rewrite' => array('slug' => 'products'),
+            'labels' => array(
+                'name' => 'Products',
+                'singular_name' => 'Product',
+                'add_new_item' => 'Add New Product',
+                'edit_item' => 'Edit Product'
+            ),
+            'menu-icon' => 'dashicons-store',
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array(
+                'title', 'thumbnail', 'editor', 'excerpt', 'comments'
+            )
+        )
+    );
+}
+
+add_action('init', 'gt_custom_post_type');
+
+
+// wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
+
+add_filter('show_admin_bar', '__return_false');

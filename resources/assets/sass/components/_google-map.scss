@@ -1,0 +1,16 @@
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:100%;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:100%;
+    width:100%;
+}
+#map {
+    height: 50vh !important;  /* The height is 400 pixels */
+    width: 100% !important;  /* The width is the width of the web page */
+   }

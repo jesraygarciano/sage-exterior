@@ -1,0 +1,103 @@
+.custom-btn{
+    border-radius: 2rem;
+    background: transparent;
+    border: 1px solid #757C84;
+    color: #ffffff;
+    font-size: 15px;
+    &:hover{
+        background: #48aa48;
+        transition: 200ms ease all;
+        color: #ffffff;
+        border: none;
+    }
+}
+.grn-btn{
+    border-radius: 1.8rem;
+    background: #48AA48;
+    color: #ffffff;
+    font-size: 15px;
+    &:hover{
+         transition: 200ms ease all;
+         border-radius: 2rem;
+         border-radius: 2rem;
+         background: transparent;
+         border: 1px solid #757C84;
+         color: #ffffff;
+    }
+}
+.grn-btn2{
+    border-radius: .5rem;
+    background: #48AA48;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+.grn-btn3{
+    background: #48aa48;
+    color: #fff!important;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    text-decoration: none!important;
+}
+.grn-btn4{
+    background: transparent;
+    border: 1.5px solid #48AA48;
+    border-radius: 2rem;
+    color: #48AA48;
+    font-size: 15px;
+    &:hover{
+        color: #ffffff;
+    }
+}
+.grn-btn5{
+    background: transparent;
+    border: 1.5px solid #757C84;
+    color: #48AA48;
+    font-size: 12px;
+    padding: 12px 25px;
+}
+.grn-btn6{
+    background: rgb(189, 192, 196);
+    border: 1.5px solid #48aa48;
+    color: black;
+    font-size: 12px;
+    padding: 12px 25px;
+    border-radius: 0 !important;
+}
+.grn-btn7{
+    padding: .7rem 1rem;
+    margin-left: .2rem;
+    background: #48aa48;
+    color: #fff;
+    font-size: 1rem !important;
+    border-radius: 9px !important;
+    opacity: .9;
+    text-decoration: none!important;
+}
+
+.grn-btn8{
+    padding: 0.5rem .5rem;
+    margin-left: .2rem;
+    background: #48aa48;
+    color: #fff;
+    font-size: .8rem !important;
+    border-radius: 9px !important;
+    opacity: .9;
+}
+
+.brwn-btn{
+    color: white!important;
+    background: #48AA48;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none!important;
+}
+
+.color-green{
+    color: #48aa48;
+}
+.grn-btn7:hover{
+    color: #ececec;
+}

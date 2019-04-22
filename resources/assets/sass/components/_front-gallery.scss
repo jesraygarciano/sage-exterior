@@ -1,0 +1,55 @@
+.g-container{
+    position: relative;
+    padding: 1rem;
+        img{
+            height: 100px;
+            width: 100%;
+        }
+    .g-line{
+        height: 2px;
+        width: 6rem;
+        background: #48aa48;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    .row{
+        .right-img img{
+            height: 100px;
+            width: 100%;
+        }
+        h4, p{
+            text-align: left;
+        }
+        h4{
+            margin-bottom: 1.4rem;
+        }
+        .col-md-4{
+            margin-top: 1rem;
+        }
+        .btn{
+            margin: 2rem 0rem;
+        }        
+    }
+    .left-img img{
+    height: 600px;
+    width: 100%;
+    }
+
+}
+@media only screen and(max-width: 768px){
+    .g-container{
+        .row{
+            .col-md-4 img{
+                margin-bottom: 1rem !important;
+            }
+        }
+    }
+    
+}
+
+.product-page-cover{
+    min-height: 40vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}

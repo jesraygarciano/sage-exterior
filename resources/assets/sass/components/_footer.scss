@@ -1,0 +1,133 @@
+.footer {
+    position: relative;
+    overflow: hidden;
+    background: #5c5c5c;
+
+    .grn-btn7{
+        background: #48AA48;
+        color: #ffffff;
+        font-size: 15px;
+        border-radius: .3rem !important;
+        font-size: 12px;
+    }
+
+    #footer-logo {
+        text-align: center;
+    }
+
+    p {
+        text-align: left;
+        color: #ffffff;
+        font-size: 12px;
+    }
+
+    .col-md-4 {
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    i {
+        color: #ffffff;
+        font-size: 10px;
+    }
+
+    .circle {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background: #6a6b6d;
+        display: inline-block;
+        margin: 2px;
+        text-align: center;
+    }
+
+    .v-line {
+        height: 5rem;
+        width: 1px;
+        background: #beb4b4;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+
+    input[type=text] {
+        background: transparent;
+        color: #ffffff;
+        border-radius: 0px;
+    }
+
+    ::placeholder {
+        color: #ffffff;
+        opacity: 1;
+        font-size: 12px;
+    }
+
+    .subscribe {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+
+        input::-webkit-input-placeholder {
+            /* Edge */
+            color: rgb(235, 235, 235);
+        }
+
+        input:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: rgb(235, 235, 235);
+        }
+
+        input::placeholder {
+            color: rgb(235, 235, 235);
+        }
+    }
+
+    .row {
+        padding: 1.6rem 10rem;
+
+        .col-md-5 {
+            height: 1.5px;
+            width: 100%;
+            background: #beb4b4;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+        }
+
+        img {
+            min-height: 46px;
+            width: 80%;        }
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .v-line{
+        display: none;
+    }
+    .footer{
+        .row{
+            padding: 1rem;
+            .col-md-5 {
+                height: 1px;
+                width: 60%;
+                margin-top: .5rem;
+                margin-bottom: .5em;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        }
+        p{
+            text-align: center;
+        }
+        .col-md-4{
+            margin-bottom: 1rem;
+        }
+        
+    }
+    
+  }
