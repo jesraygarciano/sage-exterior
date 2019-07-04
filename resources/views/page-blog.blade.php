@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="page-cover pb-5" style="border-bottom: 5px solid #b8b8b8; background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/product1.png">
+<div class="page-cover pb-5" style="border-bottom: 5px solid #b8b8b8; background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/reina2017-068.jpg">
     <div class="container" style="padding-top: 50vh;">
         <div class="text-white font-weight-bold"> <i class="fas fa-play color-green mr-2"></i> Latest Post</div>
         <div class="text-white h2 mt-3">Flow of carport installation</div>
@@ -33,7 +33,8 @@
                     <input type="radio" id="customRadio4" name="category" class="custom-control-input">
                     <label class="custom-control-label" for="customRadio4">Terrace roof</label>
                 </div>
-            </div>
+            </div> 
+
         </div>
         <div class="col-md-6">
             <?php
@@ -62,8 +63,16 @@
                         <?php the_title(); ?>
                     </a>
                 </h4>
-                <div class="text-muted text-small"><small><?php echo get_the_date(); ?> / by <?php echo get_the_author(); ?></small></div>
-                <div class="text-muted text-small"><?php echo get_the_category_list(', '); ?></small></div>
+                <div class="text-muted text-small">
+                    <small>
+                        <?php echo get_the_date(); ?> / by <?php echo get_the_author(); ?>
+                    </small>
+                </div>
+                <div class="text-muted text-small">
+                    <small>
+                    <?php echo strip_tags(get_the_category_list(', ')); ?>
+                </small>
+                </div>
 
                 <p class="pt-3">
                     <?php echo wp_trim_words(get_the_excerpt(), 10); ?>
@@ -165,36 +174,8 @@
             </div>
             <?php }
                 wp_reset_query(); 
-
             ?>
-            <!-- <div class="pt-5 font-weight-light border-bottom pb-2">
-                Gallery
-            </div>
-            <div class="gallery p-2">
-                <div class="row">
-                    <div class="col-4 p-1">
-                        <div class="img-thumbnail unick-thumbnail-image" style="height: 80px; left: 0px; top: 0px; background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/product1.png"></div>
-                    </div>
-                    <div class="col-4 p-1">
-                        <div class="img-thumbnail unick-thumbnail-image" style="height: 80px; left: 0px; top: 0px; background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/product1.png"></div>
-                    </div>
-                    <div class="col-4 p-1">
-                        <div class="img-thumbnail unick-thumbnail-image" style="height: 80px; left: 0px; top: 0px; background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/product1.png"></div>
-                    </div>
-                    <div class="col-4 p-1">
-                        <div class="img-thumbnail unick-thumbnail-image" style="height: 80px; left: 0px; top: 0px; background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/product1.png"></div>
-                    </div>
-                    <div class="col-4 p-1">
-                        <div class="img-thumbnail unick-thumbnail-image" style="height: 80px; left: 0px; top: 0px; background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/product1.png"></div>
-                    </div>
-                    <div class="col-4 p-1">
-                        <div class="img-thumbnail unick-thumbnail-image" style="height: 80px; left: 0px; top: 0px; background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/product1.png"></div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 </div>
-    
-
 @endsection

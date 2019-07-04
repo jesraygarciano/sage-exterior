@@ -1,87 +1,17 @@
 <div class="contact-container" id="front-contact-fm">
-        <div class="image-1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/contact.jpg)"></div>
+        <div class="image-1" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/form_background.jpg)"></div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 offset-md-6" style="z-index: 1;">
                     <br>
                     <div class="form-container">
-                        <!-- <form>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">FULL NAME</label> 
-                                        <input type="text" id="exampleFormControlInput1" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">FURIGANA</label> 
-                                        <input type="text" id="exampleFormControlInput1" class="form-control">
-                                    </div> 
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">Preferred contact method</label> 
-                                        <div class="form-check">
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input"> 
-                                                <label for="customRadioInline1" class="custom-control-label">Phone</label>
-                                            </div> 
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input"> 
-                                                <label for="customRadioInline2" class="custom-control-label">Fax</label>
-                                            </div> 
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input"> 
-                                                <label for="customRadioInline3" class="custom-control-label">Email</label>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">EMAIL ADDRESS</label> 
-                                        <input type="email" id="exampleFormControlInput2" placeholder="name@example.com" class="form-control">
-                                    </div>
-                                </div> 
-                                <div class="form-group col-md-6">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">PHONE NUMBER</label> 
-                                        <input type="number" id="exampleFormControlInput2" placeholder="" class="form-control">
-                                    </div> 
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">ADDRESS</label> 
-                                        <input type="text" id="exampleFormControlInput1" class="form-control">
-                                    </div> 
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">CONTENT OF INQUIRY</label> 
-                                        <div class="form-check">
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"> 
-                                                <label for="customRadio1" class="custom-control-label">Consider exterior construction according to new building construction</label>
-                                            </div>
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input"> 
-                                                <label for="customRadio2" class="custom-control-label">Consider remodeling the site</label>
-                                            </div> 
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input"> 
-                                                <label for="customRadio3" class="custom-control-label">Other (Product sales etc.)</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div> 
-                                <div class="text-center">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">YOUR MESSAGE</label> 
-                                        <textarea id="exampleFormControlTextarea1" rows="3" class="form-control"></textarea>
-                                    </div> 
-                                    <button type="button" class="grn-btn7">SEND</button>
-                                </div>
-                            </div>
-                        </form> -->
                         {!!do_shortcode('[contact-form-7 id="42" title="Contact form 1"]')!!}
                     </div>
                     <br>
                 </div>
             </div>
         </div>
-        <div class="contact-texts" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/contactbg2.png)">
+        <div class="contact-texts" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/contactbg2.jpg)">
             <div class="container-fluid">
                 <br>
                 <br>
@@ -98,7 +28,7 @@
             </div>
         </div>
         <div class="c-container" style="display:none;">
-            <img class="img-bg2" src="<?php echo get_template_directory_uri(); ?>/assets/images/contactbg2.png" alt="">
+            <img class="img-bg2" src="<?php echo get_template_directory_uri(); ?>/assets/images/contactbg2.jpg" alt="">
             <div class="overlay">
                 <div class="row">
                     <div class="contact-no col-md-3">
@@ -154,7 +84,7 @@
                                 <div class="form-group col-md-6">
                                     <div class="form-group">
                                         <label for="exampleFormControlTextarea1">お電話番号</label>
-                                        <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="">
+                                        <input type="tel" class="form-control" id="exampleFormControlInput2" placeholder="">
                                     </div>
 
                                     <div class="form-group">

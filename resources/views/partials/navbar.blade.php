@@ -4,8 +4,6 @@
             {{ get_bloginfo('name', 'display') }}
         </a>
     </div> --}}
-
-
     <header>
 <!--  -->
 	<!-- <nav class="navbar navbar-expand-md navbar-light bg-faded"> -->
@@ -34,12 +32,20 @@
 						   ?>
 
 							<form class="form-inline mt-2 mt-md-0 custom mb-3" id="bs4navbar">
-								<a href="tel:+0726698210">
+								<a href="tel:0726698210">
 									<button class="grn-btn3" type="button" style="transform: translateY(8px)">
 										<i class="fa fa-phone"></i>
 										 072-669-8210
 									</button>
 								</a>
+
+								<a style="margin-left:.7rem;" href="<?php echo site_url('/#front-contact-fm'); ?>">
+									<button class="grn-btn-sub" type="button" style="transform: translateY(8px)">
+										<i class="fa fa-envelope"></i>
+										お問い合わせ
+									</button>
+								</a>
+
 							</form>
 						</div>
 			</nav>

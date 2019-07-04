@@ -14,9 +14,12 @@
         left: 0;
         top: 0;
         background-color: #777;
+        // background-attachment: fixed;
+        // background-size: cover;
         background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
+        background-size: inherit;
+        background-position: top;
+        // background-position: center;
     }
     .overlay{
         height: 100%;
@@ -25,7 +28,7 @@
         background: #242a55;
         position: absolute;
         top: 0px;
-        opacity: .25;
+        opacity: .50;
     }
     .content{
         // position: absolute;
@@ -35,8 +38,12 @@
         p, h4{
             color: #ffffff;
         }
+        p{
+            text-align: justify;
+        }
         h4{
             margin-bottom: 3.5rem;
+            text-align: left;
         }
         h6{
             color: #48aa48;
@@ -83,9 +90,33 @@
 
 }
 @media only screen and (max-width: 768px) {
-    
-    .content{
-        top: 20px !important;
-        left:20px !important;
-    }
+    .f-container{
+        .content{
+            top: 20px !important;
+            left:20px !important;
+
+            p, h4, #about-grn-btn4{
+                margin-left: -45px;
+                margin-right: -45px;
+            }
+            h6{
+                margin-left: -35px;
+                margin-right: -35px;
+            }
+            .w-line{
+                left: -50px !important;
+            }
+        }
+    }    
 }
+
+@media only screen and(max-width: 480px){
+
+    .bg-image{
+        background-attachment: initial!important;
+        background-position: initial!important;
+        background-size: 550px 830px!important;
+    }
+
+  }
+

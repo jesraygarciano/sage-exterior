@@ -17,5 +17,7 @@
 @include('components.front-contact')
 @include('components.partners')
 
+@include('components.work-area')
+
 
 @endsection

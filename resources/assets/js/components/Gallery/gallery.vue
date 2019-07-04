@@ -31,6 +31,7 @@ export default {
             this.$root.$refs.product_description.innerHTML = this.photos[this.current_image].description
         }
     }
+
 }
 </script>
 <style lang="scss" scoped>

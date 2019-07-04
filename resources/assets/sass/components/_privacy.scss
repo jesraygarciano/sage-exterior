@@ -85,19 +85,33 @@ img{
 }
 
 
-@media screen and (max-width: 765px) {
-    .row{
-        display: flex;
-        flex-direction: column;
-        .col-md-8{
-            order: 2;
-            width: 100%;
+}
+@media only screen and(max-width: 768px){
+    #ex-privacy{
+        .privacy-bg-image{
+            height: 33rem !important;
         }
-        .col-md-4{
-            order: 1;
-            width: 100%;
+        #privacy-hero-text{
+            transform: translateY(-330px)
         }
     }
 }
-
+@media screen and (max-width: 765px) {
+    #ex-privacy{
+        .privacy-container{
+            .row{
+                display: flex;
+                flex-direction: column;
+                .col-md-8{
+                    order: 2;
+                    width: 100%;
+                }
+                .col-md-4{
+                    order: 1;
+                    width: 100%;
+                }
+            }
+        }
     }
+    
+}

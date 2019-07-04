@@ -12,24 +12,25 @@
         </div>
         <div class="row">
             <div class="col-md-2">
-                <p><a href="#">TOP</a></p>
-                <p><a href="#">PRODUCTS</a></p>
-                <p><a href="#">BLOG</a></p>
+                <p><a href="http://sotorie.sakura.ne.jp/">TOP</a></p>
+                <p><a href="https://sotorie.sakura.ne.jp/product/">PRODUCTS</a></p>
+                <p><a href="https://sotorie.sakura.ne.jp/blog/">BLOG</a></p>
             </div>
             <div class="col-md-2">
-                <p><a href="#">STAFFS</a></p>
-                <p><a href="#">PRIVACY</a></p>
-                <p><a href="#">FAQS</a></p>
+                <p><a href="https://sotorie.sakura.ne.jp/staffs/">STAFFS</a></p>
+                <p><a href="https://sotorie.sakura.ne.jp/privacy/">PRIVACY</a></p>
+                <p><a href="https://sotorie.sakura.ne.jp/faqs/">FAQS</a></p>
+                <p><a href="https://www.instagram.com/sotorie/">INSTAGRAM</a></p>
             </div>
             <div class="col-md-4">
+                    {{-- <div class="circle">
+                            <a href="https://www.instagram.com/sotorie/"><i class="fab fa-instagram"></i></a>
+                    </div> --}}
                 <!-- <div class="circle">
                     <i class="fab fa-facebook-f"></i>
                 </div>
                 <div class="circle">
                     <i class="fab fa-twitter"></i>                        
-                </div>
-                <div class="circle">
-                    <i class="fab fa-instagram"></i>                        
                 </div>
                 <div class="circle">
                     <i class="fab fa-linkedin-in"></i>                        

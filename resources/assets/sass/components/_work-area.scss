@@ -1,0 +1,57 @@
+.work-area{
+    .area{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            list-style: none;
+        }
+        li{
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+        ul li::before {
+            content: "\2022";  
+            color: #48aa48;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em; 
+            margin-left: -1em;
+        }
+        h5{
+            color: #48aa48;
+        }
+    }
+    
+    
+    .hr{
+        height: 1px;
+        width: 100%;
+        background: #48aa48;
+    }
+
+    .area-header{
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+        }
+            
+        li {
+            float: left;
+            border: 1px solid #48aa48;
+        }
+        
+        li h5 {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            margin: auto;
+        }
+    }
+}

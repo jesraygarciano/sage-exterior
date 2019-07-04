@@ -132,13 +132,33 @@
     margin-top: 7rem;
   }
 }
-@media only screen and(max-width: 400px){
-  .display-2{
+@media only screen and(max-width: 768px){
+  .hero-head-text{
     font-size: 3rem !important;
+  }
+  .carousel-item{
+    height: 28rem;
+    background-color: #777;
+    background-attachment: initial;
+    background-size: cover;
+    background-position: left;
+  }
+  .carousel-caption{
+    bottom: 110px !important;
   }
 }
 
 .hero-head-text{
-  font-family: Roboto, sans-serif;
-  font-weight: 700!important;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 7rem;
+}
+
+#hero-head-text1{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 7rem;
+}
+
+#hero-head-text2{
+  font-family: 'Gamja Flower', cursive;
+  font-size: 7rem;
 }

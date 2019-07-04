@@ -4,12 +4,7 @@
             <div class="text-white h2 mt-3 text-center"> <i class="fas fa-play color-green mr-2"></i> <span style="text-shadow: 2px 2px 4px #000000;">{{ get_the_title() }}</span></div>
         </div>
     </div>
-    <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col-md-3">
-                <unick-card picture_src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" name="{{ get_the_author() }}"/>
-            </div>
-            <div class="col-md-9">
+    <div class="container mt-5">
                 <h1 class="entry-title font-weight-bold">{{ get_the_title() }}</h1>
                 <div class="entry-content">
                     @php the_content() @endphp
@@ -72,14 +67,13 @@
                             while($products->have_posts()) {
                                 $products->the_post();
                         ?>
-                        <div class="col-lg-3 blog-image">
+                        <div class="col-lg-3 blog-image mt-4">
                             <div class="bg-wrapper" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>)">
                                 <div class="card-overlay"></div>
                             </div>
                             
                             <h5><?php the_title(); ?></h5>
                             <a href="<?php the_permalink(); ?>" class="btn btn-transparent">See Details</a>
-                            <span><i class="fas fa-signal"></i></span>
                         </div>
                         <?php
                             }
@@ -87,8 +81,6 @@
                         ?>
                     </div>
                 </div>
-            </div>
-        </div>
         <br>
         <br>
     </div>

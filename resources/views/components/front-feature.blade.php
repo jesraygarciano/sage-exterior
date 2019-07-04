@@ -1,24 +1,18 @@
 <div id="front-feature">
-        <div class="container text-center" style="z-index: 2">
-        <h3>大阪で外構、エクステリア、お庭まわりのことならお任せください。</h3>
-        <div class="g-line"></div>
+    <div class="container text-center" style="z-index: 2">
+    <div class="g-line"></div>
         <div class="row">
             <div class="col-lg-4">
                     <div class="main-container">
                         <div class="circle">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/circle1.jpg" alt="Product 1">  
-                            <div class="gradient"></div>
+                            <div class="gray-dark"></div>
                             <div class="caption">
                                 <p>
                                     迅速対応
                                 </p>
                                 <div class="line"></div>
                             </div>
-                        </div>
-                        <div class="square center">
-                            <p>
-                                1
-                            </p>
                         </div>
                     </div>
 
@@ -33,18 +27,13 @@
                     <div class="main-container">
                         <div class="circle">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/circle3.png" alt="Product 1">  
-                            <div class="gradient"></div>
+                            <div class="gray-normal"></div>
                             <div class="caption">
                                 <p>
                                     親身な相談
                                 </p>
                                 <div class="line"></div>
                             </div>
-                        </div>
-                        <div class="square center">
-                            <p>
-                                2
-                            </p>
                         </div>
                     </div>
 
@@ -59,18 +48,13 @@
                     <div class="main-container">
                         <div class="circle">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/circle2.jpg" alt="Product 1">  
-                            <div class="gradient"></div>
+                            <div class="gray-lighter"></div>
                             <div class="caption">
                                 <p>
                                     いざという時も安心！
                                 </p>
                                 <div class="line"></div>
                             </div>
-                        </div>
-                        <div class="square center">
-                            <p>
-                                3
-                            </p>
                         </div>
                     </div>
 

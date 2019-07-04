@@ -18,5 +18,18 @@
 @include('partials.footer')
 @php wp_footer() @endphp
 
+@php 
+if(is_home() or is_front_page()):
+@endphp
+<script>
+    document.addEventListener( 'wpcf7mailsent', function( event ) {
+        location = 'http://sotorie.com/thankyou';
+    }, false );
+</script>
+@php 
+endif;
+@endphp
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.js"></script>
 </body>
 </html>

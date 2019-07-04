@@ -1,8 +1,15 @@
 #ex-our-team{
 	.profiles{
-    transform: translateY(-200px);
-    margin-bottom: -200px;
-		}
+    // transform: translateY(-200px);
+    // margin-bottom: -200px;
+        li{
+            border-radius: 6px;
+            background-color: #48aa48;
+            color: white;
+            padding: .3rem 1rem;
+            font-weight: 700;
+        }
+    }
 		.bg-image{
 		    position: relative;
 		    width: 100%;
@@ -24,7 +31,7 @@
 }
 .info{
     background: #f1f9fe;
-    color: #2598fb;
+    color: #4b4f52;
     padding: 2rem;
 }
 .white-btn{

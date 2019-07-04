@@ -1,4 +1,4 @@
-    <section class="pricing" id="price-table" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/price-table.jpg');">
+    <section class="pricing" id="price-table" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/price_table.jpg');">
         <div class="price-table-layer py-5">
             <div class="container">
                 <h1 class="text-center mb-5 pb-5 text-secondary text-uppercase" style="visibility: hidden;">Price table</h1>

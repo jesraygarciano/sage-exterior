@@ -47,7 +47,7 @@
         }
         h1{
             color: #ffffff;
-            transform: translateY(-360px);
+            transform: translateY(-260px);
             font-weight: bold;
             font-size: 50px;
         }
@@ -62,12 +62,12 @@
                     .panel-title>a, .panel-title>a:active{
                         display:block;
                         padding:2.5rem;
-                      color:#48AA48;
-                      font-size:16px;
-                      font-weight:bold;
+                        color:#48AA48;
+                        font-size:16px;
+                        font-weight:bold;
                         text-transform:uppercase;
                         letter-spacing:1px;
-                      word-spacing:3px;
+                        word-spacing:3px;
                         text-decoration:none;
                     }
                     .panel-heading a:before {
@@ -92,6 +92,8 @@
                         font-size: 1.2rem;
                     }
         }
+        
+        
         // #faqs-main{
         //     background: #ececec;
         //     padding: 2rem;
@@ -137,4 +139,14 @@
         // }
 
 
+}
+@media only screen and(max-width: 768px){
+    #ex-faqs{
+        .faq-bg-image{
+            height: 28rem !important;
+        }
+        h1{
+            transform: translateY(-240px);
+        }
+    }
 }

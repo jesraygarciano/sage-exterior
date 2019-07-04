@@ -54,14 +54,13 @@
         .ratio {
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             height: 0;
             padding-bottom: 100%;
             position: relative;
             width: 100%;
             border: 2px solid rgb(70, 170, 70);
             box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-
         }
 
         .img-circle {
@@ -91,3 +90,8 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+@media only screen and(max-width: 768px){
+    .service-title{
+        margin-left: 1rem;
+    }
+}

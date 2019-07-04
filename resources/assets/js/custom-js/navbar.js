@@ -14,14 +14,14 @@ jQuery(document).ready(function(){
             jQuery(".navbar").css({
                 'background' : '#FFFFFF80',
                 'box-shadow' : 'none'
-            });  	
+            });
         }
     })
     // adding button in collapse
     var flag = 0;
     function appendForm(x){
         while(flag == 0){
-            jQuery('#bs4navbar').append(jQuery('<form class="form-inline mt-2 mt-md-0 custom2" id="bs4navbar"><a href="tel:+0726698210"><button class="grn-btn3" type="button"><i class="fa fa-phone"></i> 072-669-8210</button></a></form>'))
+            jQuery('#bs4navbar').append(jQuery('<form class="form-inline mt-2 mt-md-0 custom2" id="bs4navbar"><a href="tel:+0726698210"><button class="grn-btn3" type="button"><i class="fa fa-phone"></i> 072-669-8210</button></a><div class="mt-2"><a style="margin-top:1rem;" href="#front-contact-fm""><button class="grn-btn-sub" type="button"><i class="fa fa-envelope"></i> お問い合わせ</button></a></div></form>'))
             flag++;
         }
         if(x.matches){
@@ -29,11 +29,11 @@ jQuery(document).ready(function(){
             var elem = document.querySelector('.custom');
             elem.style.display = 'none';
             var elem2 = document.querySelector('.custom2');
-            elem2.style.display = 'flex';
+            elem2.style.display = 'block';
         }
         else{
             var elem = document.querySelector('.custom');
-            elem.style.display = 'flex';
+            elem.style.display = 'block';
             var elem2 = document.querySelector('.custom2');
             elem2.style.display = 'none';
         }

@@ -170,3 +170,19 @@ add_action('init', 'gt_custom_post_type');
 // wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
 
 add_filter('show_admin_bar', '__return_false');
+
+// removing emoji
+remove_action('admin_print_scripts', 'print_emoji_detection_script');
+remove_action('admin_print_styles', 'print_emoji_styles');
+
+// Without contact form for other pages
+
+function my_delete_local_jquery()
+  {
+      if (!is_front_page() && !is_home()) {
+          wp_deregister_script('jquery');
+          wp_dequeue_script('google-recaptcha');
+          wp_deregister_style('contact-form-7');
+      }
+  }
+  add_action('wp_enqueue_scripts', 'my_delete_local_jquery');

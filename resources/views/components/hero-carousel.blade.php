@@ -6,44 +6,41 @@
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
         </ol>
+
         <div class="carousel-inner">
-          <div class="carousel-item active" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/carousel_img1.jpeg)">
-
+          <div class="carousel-item active" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/carousel_img1_bkp-min.jpg)">
             <div class="slide-linearbg">
-                <!-- <img class="first-slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/carousel_img1.jpeg" alt="First slide"> -->
             </div>
 
             <div class="container">
               <div class="carousel-caption text-left">
-                <h1 class="display-2 hero-head-text" style="margin-bottom: 1rem;">Smile in the Garden</h1>
+                    <!--<h1 class="hero-head-text" id="hero-head-text1" style="margin-bottom: 1rem;">Smile in the Garden</h1> -->                
+	             <img style="margin-bottom:1rem;" src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-title-smile.png" alt="Smile in the garden">  
+
+				<picture>
+				  {{-- <source media="(max-width: 768px)" srcset="https://satoyama-nippon.org/wp-content/themes/satoyamanippon/assets/images/home/home-banner_sp.png">
+				  <img src="https://satoyama-nippon.org/wp-content/themes/satoyamanippon/assets/images/home/home-banner.png" alt="広島県の中山間地域を巡ろう!オオサンショウウオ・ソロツーリングラリー2019 10.27(sun)7:00 ~ 19:30"> --}}
+				</picture>
+
                 <p><a class="grn-btn7" id="btnContact" href="#front-contact-fm" role="button">お問い合わせ</a></p>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/carousel_img2.jpeg)">
+          <div class="carousel-item" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/carousel_img2.jpg)">
             <div class="slide-linearbg">
-                <!-- <img class="second-slide" src="<?php echo get_template_directory_uri(); ?>/assets/images/carousel_img2.jpeg" alt="Second slide"> -->
             </div>
 
             <div class="container">
               <div class="carousel-caption text-left">
-                <h1 class="display-2 hero-head-text" style="margin-bottom: 1rem;">ソトリエde庭デザイン</h1>
+	             <img style="margin-bottom:1rem;" src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-title.png" alt="Smile in the garden">  
+
                 <p><a class="grn-btn7" id="btnContact" href="#front-contact-fm" role="button">お問い合わせ</a></p>
               </div>
             </div>
           </div>
-          <!--<div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-            <div class="container">
-              <div class="carousel-caption text-left">
-                <h1>One more for good measure.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-              </div>
-            </div>
-          </div> -->
         </div>
+
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>

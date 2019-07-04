@@ -21,6 +21,10 @@
         font-size: 12px;
     }
 
+    p a{
+        color: #ffffff;
+    }
+
     .col-md-4 {
         padding-right: 0px;
         text-align: center;
@@ -95,8 +99,9 @@
         }
 
         img {
-            min-height: 46px;
-            width: 80%;        }
+            height: 60px;
+            width: 155px;
+        }
     }
 
 }
